@@ -5,40 +5,16 @@
 	<title>Validar formulario</title>
 	<style>
 		body{background-color: #264673; box-sizing: border-box; font-family: Arial;}
-
-		form{
-			background-color: white;
-			padding: 10px;
-			margin: 100px auto;
-			width: 400px;
-		}
-
-		input[type=text], input[type=password]{
-			padding: 10px;
-			width: 380px;
-		}
-		input[type="submit"]{
-			border: 0;
-			background-color: #ED8824;
-			padding: 10px 20px;
-		}
-
-		.error{
-			background-color: #FF9185;
-			font-size: 12px;
-			padding: 10px;
-		}
-		.correcto{
-			background-color: #A0DEA7;
-			font-size: 12px;
-			padding: 10px;
-		}
+		form{ background-color: white; padding: 10px; margin: 100px auto; width: 400px;}
+		input[type=text], input[type=password]{ padding: 10px; width: 380px;}
+		input[type="submit"]{ border: 0; background-color: #ED8824; padding: 10px 20px;}
+		.error{ background-color: #FF9185; font-size: 12px; padding: 10px;}
+		.correcto{ background-color: #A0DEA7; font-size: 12px; padding: 10px;}
 	</style>
 </head>
 <body>
 	<form action="formulario.php" method="POST">
 		<?php
-			
 			if(isset($_POST['nombre'])){
 				$nombre = $_POST['nombre'];
 				$password = $_POST['password'];
